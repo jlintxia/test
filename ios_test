@@ -9,8 +9,8 @@ from ios_device import py_ios_device
 from ios_device.py_ios_device import PyiOSDevice
 from tidevice import Device
 
-app_bundle_id = "com.dev8.mojomaker" #测试iOS应用包名
-device_id="00008030-0015293E0EE0802E"#测试设备ID
+app_bundle_id = "com.XXXX" #测试iOS应用包名
+device_id="00008-XXXXXXX"#测试设备UUID
 
 def callback_fps(res):
   print('FPS打印',res)
@@ -22,10 +22,10 @@ def callback_fps(res):
   stutter=ss.split("'stutter':")[1][0:5].split("}")[0]
 # 数据存数据库连接数据库
   connect = pymysql.Connect(
-  host='10.0.3.140',
+  host='1XXXXXX',
   port=3306,
   user='root',
-  passwd='Aa654321',
+  passwd='AXXXX',
   db='test',
   charset='utf8'
   )
@@ -47,10 +47,10 @@ def callback_gpu(res):
   gpu_Tiler=ss.split("'Tiler Utilization %':")[1].split(",")[0]
      # 数据存数据库连接数据库
   connect = pymysql.Connect(
-  host='10.0.3.140',
+  host='1X.XXXX',
   port=3306,
   user='root',
-  passwd='Aa654321',
+  passwd='XXX',
   db='test',
   charset='utf8'
   )
@@ -78,10 +78,10 @@ def test_get_myZtest():
             count_cpu=ss.split("'count':")[1].split("}")[0]
 # 数据存数据库连接数据库
             connect = pymysql.Connect(
-            host='10.0.3.140',
+            host='1XXX',
             port=3306,
             user='root',
-            passwd='Aa654321',
+            passwd='AXXXXX',
             db='test',
             charset='utf8'
             )
@@ -99,10 +99,10 @@ def test_get_myZtest():
             memory=ss.split("'value':")[1][0:6].split("}")[0]
             # 数据存数据库连接数据库
             connect = pymysql.Connect(
-            host='10.0.3.140',
+            host='10XXXX',
             port=3306,
             user='root',
-            passwd='Aa654321',
+            passwd='XXXX',
             db='test',
             charset='utf8'
             )
